@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    android:gravity="center"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HACK://MESSENGER"
+        android:textColor="@color/green"
+        android:textSize="20sp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:letterSpacing="0.15"
+        android:paddingBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="// настройка профиля //"
+        android:textColor="@color/ddg"
+        android:textSize="10sp"
+        android:fontFamily="monospace"
+        android:paddingBottom="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ИМЯ ПОЛЬЗОВАТЕЛЯ:"
+        android:textColor="@color/dg"
+        android:textSize="10sp"
+        android:fontFamily="monospace"
+        android:letterSpacing="0.1"
+        android:paddingBottom="6dp"/>
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/input_bg"
+        android:textColor="@color/green"
+        android:textColorHint="@color/ddg"
+        android:hint="ANON"
+        android:textSize="14sp"
+        android:fontFamily="monospace"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:inputType="text"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ПАРОЛЬ ШИФРОВАНИЯ (необязательно):"
+        android:textColor="@color/dg"
+        android:textSize="10sp"
+        android:fontFamily="monospace"
+        android:letterSpacing="0.1"
+        android:paddingBottom="6dp"/>
+
+    <EditText
+        android:id="@+id/editPass"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/input_bg"
+        android:textColor="@color/green"
+        android:textColorHint="@color/ddg"
+        android:hint="пароль..."
+        android:textSize="14sp"
+        android:fontFamily="monospace"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="✓  СОХРАНИТЬ"
+        android:textColor="@color/green"
+        android:textSize="13sp"
+        android:fontFamily="monospace"
+        android:letterSpacing="0.1"
+        android:background="@drawable/btn_send_bg"/>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="@color/panel"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="HACK://MESSENGER"
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:letterSpacing="0.15"/>
+
+        <TextView
+            android:id="@+id/statusDot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="●"
+            android:textSize="10sp"
+            android:textColor="@color/ddg"
+            android:paddingEnd="4dp"/>
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ОФЛАЙН"
+            android:textColor="@color/ddg"
+            android:textSize="10sp"
+            android:fontFamily="monospace"
+            android:paddingEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/btnNetwork"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="🌐"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <TextView
+            android:id="@+id/btnProfile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="👤"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/border"/>
+
+    <!-- SECTION LABEL -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="// ЧАТЫ //"
+        android:textColor="@color/ddg"
+        android:textSize="9sp"
+        android:fontFamily="monospace"
+        android:letterSpacing="0.2"
+        android:paddingStart="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="4dp"/>
+
+    <!-- CHAT LIST -->
+    <ListView
+        android:id="@+id/listChats"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/border"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector"/>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/border"/>
+
+    <!-- NEW CHAT BUTTON -->
+    <TextView
+        android:id="@+id/btnNewChat"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="＋  НОВЫЙ ЧАТ"
+        android:textColor="@color/dg"
+        android:textSize="12sp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:background="@color/panel"/>
+
+</LinearLayout>
